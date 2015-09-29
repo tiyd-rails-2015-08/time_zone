@@ -1,0 +1,13 @@
+<h1>Choose Your Timezone</h1>
+
+<%= form_tag times_results_path do %>
+
+  <%= select_tag :zone,
+      options_for_select([["Eastern", 0],
+                          ["Central", 1],
+                          ["Mountain", 2],
+                          ["Pacific", 3]]) %>
+
+  <%= submit_tag "Find my time!", {id: "thebutton"} %>
+
+<% end %>
